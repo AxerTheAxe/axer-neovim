@@ -20,3 +20,16 @@ require('bufferline').setup {
     }
   }
 }
+
+-- Lets you delete the current buffer
+vim.keymap.set("n", "<leader>d", ":bdelete<CR>", { silent = true }) -- Normal | Control+d
+-- Lets you force delete the current buffer, even if it has unsaved changes
+vim.keymap.set("n", "<leader>D", ":bdelete!<CR>", { silent = true }) -- Normal | Control+D
+-- Lets you focus the next buffer to the left
+vim.keymap.set("n", "<C-l>", ":BufferLineCycleNext<CR>", { silent = true }) -- Normal | Control+l
+-- Lets you focus the next buffer to the right
+vim.keymap.set("n", "<C-h>", ":BufferLineCyclePrev<CR>", { silent = true }) -- Normal | Control+h
+-- Lets you reorder the current buffer one to the right
+vim.keymap.set("n", "<C-w>", ":BufferLineMoveNext<CR>", { silent = true }) -- Normal | Control+w
+-- Lets you reorder the current buffer one to the left
+vim.keymap.set("n", "<C-b>", ":BufferLineMovePrev<CR>", { silent = true }) -- Normal | Control+b
