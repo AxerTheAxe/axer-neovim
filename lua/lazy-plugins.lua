@@ -1,4 +1,4 @@
--- This script is used to bootstrap and configure Lazy, a plugin manager for neovim.
+-- This script is used to bootstrap and configure Lazy, a plugin manager for Neovim.
 
 -- Define filepath for bootstrapping
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -17,9 +17,13 @@ end
 -- Adds Lazy directory to the neovim RTP
 vim.opt.rtp:prepend(lazypath)
 
+-- String table for the plugins we want to install
 local plugins = {
+  -- Rosepine colorscheme for Neovim
   "rose-pine/neovim",
+  -- File icons within Neovim
   'nvim-tree/nvim-web-devicons',
+  -- Tabs on the top of Neovim for each open file and buffer
   'akinsho/bufferline.nvim'
 }
 

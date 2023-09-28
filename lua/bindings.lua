@@ -1,4 +1,4 @@
--- This script is used to create keybindings for built-in neovim features
+-- This script is used to create keybindings for built-in Neovim features
 
 -- Sets the leader key, which is used as a custom prefix for other bindings
 vim.g.mapleader = " " -- Any | Space

@@ -1,9 +1,9 @@
--- This script is used to edit built-in neovim settings
+-- This script is used to edit built-in Neovim settings
 
 -- Better lua loader, improves start speed
 vim.loader.enable()
 
--- Controls how frequently neovim does updates in milliseconds, affects preformance
+-- Controls how frequently Neovim does updates in milliseconds, affects preformance
 vim.opt.updatetime = 50
 
 -- Automatically changes nvims directory to the current buffer
@@ -12,7 +12,7 @@ vim.opt.autochdir = true
 -- Overrides terminal color palette
 vim.opt.termguicolors = true
 
--- Lets neovim react to mouse events
+-- Lets Neovim react to mouse events
 vim.opt.mousemoveevent = true
 
 -- Makes the cursor a solid block regardless of mode

@@ -7,9 +7,9 @@ local base = "#141122"
 require("rose-pine").setup {
   -- Lets you change color groups for Rosepine
   groups  = { 
-    -- Changes neovim's background color
+    -- Changes Neovim's background color
     background = base,
-    -- Changes neovim's background color for some windows
+    -- Changes Neovim's background color for some windows
     panel_nc = base
   },
   
@@ -55,5 +55,5 @@ require("rose-pine").setup {
   }
 }
 
--- Tells neovim to use Rosepine as it's colorscheme
+-- Tells Neovim to use Rosepine as it's colorscheme
 vim.cmd("colorscheme rose-pine")
