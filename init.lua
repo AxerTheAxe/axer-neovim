@@ -1,5 +1,5 @@
 -- This script is sourced automatically upon launching neovim
--- We will use it to source other configuration files
+-- and is used to source other configuration files
 
 -- Source built-in settings
 require("settings")
