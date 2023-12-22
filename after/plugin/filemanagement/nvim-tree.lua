@@ -36,11 +36,6 @@ require("nvim-tree").setup {
     update_cwd = true
   },
 
-  -- Hide dotfiles in the explorer by default
-  filters = {
-    dotfiles = true
-  },
-
   actions = {
     open_file = {
       quit_on_open = true,

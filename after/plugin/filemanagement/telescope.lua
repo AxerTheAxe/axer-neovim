@@ -20,6 +20,10 @@ require("telescope").setup {
   },
   -- Options for built-in pickers
   pickers = {
+    -- Settings for the 'find files' picker
+    find_files = {
+      hidden = true
+    },
     -- Settings for the 'old files' picker
     oldfiles = {
       -- Changes the pickers prompt
@@ -30,7 +34,7 @@ require("telescope").setup {
 
 -- Bindings...
 -- Lets you open the current directory file picker
-vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files) -- Normal | Leader+f
+vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files) -- Normal | Leader+f+f
 -- Lets you open the recent files picker
 vim.keymap.set("n", "<leader>rf", require("telescope.builtin").oldfiles)   -- Normal | Leader+r+f
 -- Lets you open the git project files picker
