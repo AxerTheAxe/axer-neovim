@@ -83,9 +83,6 @@ require("lazy").setup {
   -- Automatic closing for pair characters
   { "windwp/nvim-autopairs", event = "InsertEnter",                             opts = {} },
 
-  -- I should make my own version of this
-  { "abecodes/tabout.nvim",  config = function() require("tabout").setup {} end },
-
   -- Bufferstore:
   -- Stores buffer information
   "axertheaxe/bufferstore.nvim",
